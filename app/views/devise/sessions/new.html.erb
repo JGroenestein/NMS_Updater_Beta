@@ -88,12 +88,25 @@
                         <%= f.check_box :remember_me %><span class="lbl"> Remember Me</span>
                       <% end -%>
                     </label>
-                    <%= f.submit "Login", class: "span4 btn btn-small btn-primary" %>
+
+                    <%= button_tag(type: 'submit', class: "span4 btn btn-small btn-primary") do %>
+                      <i class="icon-key"></i>
+                      Login
+                    <% end %>
                   </div>
                 <% end %>
               </div>
               <!--/widget-main-->
               </div>
+
+            <div class="toolbar clearfix">
+              <div>
+              </div>
+
+              <div>
+                <%= link_to (raw('Create a new user<i class="icon-arrow-right"></i>')), new_user_registration_path, :class => "user-signup-link bigger-125" %>
+              </div>
+            </div>
             </div><!--/widget-body-->
           </div><!--/login-box-->
         </div><!--/position-relative-->

@@ -4,13 +4,14 @@ NMSUpdaterBeta::Application.routes.draw do
 
   root :to => 'dashboard#index'
 
-  match 'index' => 'dashboard#index'
+  match 'index'   => 'dashboard#index'
 
-  match 'add' => 'NMS#add'
-  match 'update' => 'NMS#update'
-  match 'remove' => 'NMS#remove'
+  match 'add'     => 'NMS#add'
+  match 'update'  => 'NMS#update'
+  match 'remove'  => 'NMS#remove'
 
-  match 'process' => 'Process#process'
+  match 'process' => 'Process#process_page'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

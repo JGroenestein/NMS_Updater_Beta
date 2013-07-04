@@ -11,4 +11,5 @@ module ApplicationHelper
   def active_menu? (path)
     path ? 'active open' : ''
   end
+
 end

@@ -1,21 +1,147 @@
-<h2>Sign up</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Login Page - Ace Admin</title>
 
-<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+  <meta name="description" content="User login page" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email, :autofocus => true %></div>
+  <!--basic styles-->
 
-  <div><%= f.label :username %><br />
-  <%= f.email_field :username %></div>
+  <%= stylesheet_link_tag 'bootstrap.min' %>
+  <%= stylesheet_link_tag 'bootstrap-responsive.min' %>
+  <%= stylesheet_link_tag 'font-awesome.min' %>
 
-  <div><%= f.label :password %><br />
-  <%= f.password_field :password %></div>
+  <!--[if IE 7]>
+    <%= stylesheet_link_tag 'font-awesome-ie7.min' %>
+  <![endif]-->
 
-  <div><%= f.label :password_confirmation %><br />
-  <%= f.password_field :password_confirmation %></div>
+  <!--page specific plugin styles-->
 
-  <div><%= f.submit "Sign up" %></div>
-<% end %>
+  <!--fonts-->
 
-<%= render "devise/shared/links" %>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" />
+
+  <!--ace styles-->
+
+  <%= stylesheet_link_tag 'ace.min' %>
+  <%= stylesheet_link_tag 'ace-responsive.min' %>
+
+  <!--[if lt IE 9]>
+    <%= stylesheet_link_tag 'ace-ie.min' %>
+  <![endif]-->
+</head>
+
+<body class="login-layout">
+<div class="container-fluid" id="main-container">
+<div id="main-content">
+<div class="row-fluid">
+  <div class="span12">
+    <div class="login-container">
+      <div class="row-fluid">
+        <div class="center">
+          <h1>
+            <i class="icon-cloud blue"></i>
+            <span class="white">NMS Updater</span>
+            <span class="red">Beta</span>
+          </h1>
+        </div>
+      </div>
+
+      <div class="space-6"></div>
+
+      <div class="row-fluid">
+        <div class="position-relative">
+
+          <div id="signup-box" class="visible widget-box no-border">
+            <div class="widget-body">
+              <div class="widget-main">
+
+                <% unless devise_error_messages! == "" %>
+                  <div>
+                    <%= devise_error_messages! %>
+                  </div>
+                <% end %>
+                <h4 class="header green lighter bigger">
+                  <i class="icon-group blue"></i>
+                  New User
+                </h4>
+
+                <div class="space-6"></div>
+                <p>
+                  Enter your details:
+                </p>
+
+
+                <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+
+                  <label>
+															<span class="block input-icon input-icon-right">
+	                                <%= f.email_field :email, :autofocus => true, :class => "span12", :placeholder => "Email" %>
+                                <i class="icon-envelope"></i>
+															</span>
+                  </label>
+
+                  <label>
+															<span class="block input-icon input-icon-right">
+                                <%= f.text_field :username, :class => "span12", :placeholder => "Username" %>
+                                <i class="icon-user"></i>
+															</span>
+                  </label>
+
+                  <label>
+															<span class="block input-icon input-icon-right">
+                                <%= f.password_field :password, :class => "span12", :placeholder => "Password" %>
+																<i class="icon-lock"></i>
+															</span>
+                  </label>
+
+                  <label>
+															<span class="block input-icon input-icon-right">
+                                <%= f.password_field :password_confirmation, :class => "span12", :placeholder => "Repeat password" %>
+																<i class="icon-retweet"></i>
+															</span>
+                  </label>
+
+                  <div class="space-24"></div>
+
+                  <div class="row-fluid">
+                    <button type="reset" class="span6 btn btn-small">
+                      <i class="icon-refresh"></i>
+                      Reset
+                    </button>
+
+                    <%= button_tag(type: 'submit', class: "span6 btn btn-small btn-success") do %>
+                      Register
+                      <i class="icon-arrow-right icon-on-right"></i>
+                    <% end %>
+                  </div>
+                <% end %>
+              </div>
+
+              <div class="toolbar center">
+                <%= link_to (raw('<i class="icon-arrow-left"></i>Back to login')), new_user_session_path, :class => "back-to-login-link" %>
+              </div>
+            </div><!--/widget-body-->
+          </div><!--/signup-box-->
+        </div><!--/position-relative-->
+      </div>
+    </div>
+  </div><!--/span-->
+</div><!--/row-->
+</div>
+</div><!--/.fluid-container-->
+
+<!--basic scripts-->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+  window.jQuery || document.write("<script src='assets/js/jquery-1.9.1.min.js'>"+"<"+"/script>");
+</script>
+
+<!--page specific plugin scripts-->
+
+<!--inline scripts related to this page-->
+</body>
+</html>
