@@ -1,0 +1,79 @@
+<% provide(:title, 'Edit User') %>
+<% provide(:page_header_description, 'Update User Details') %>
+
+<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put, :class => "form-horizontal" }) do |f| %>
+
+  <% unless devise_error_messages! == "" %>
+    <div class="alert alert-error">
+      <button type="button" class="close" data-dismiss="alert">
+        <i class="icon-remove"></i>
+      </button>
+
+      <%= devise_error_messages! %>
+      <br>
+    </div>
+
+  <% end %>
+
+  <div class="control-group">
+    <label class="control-label" for="user_email">Email</label>
+
+    <div class="controls">
+      <%= f.email_field :email, :autofocus => true %>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label" for="user_username">Username</label>
+
+    <div class="controls">
+      <%= f.text_field :username %>
+    </div>
+  </div>
+
+  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+  <% end %>
+
+  <div class="hr hidden"></div>
+
+  <div class="control-group">
+    <label class="control-label" for="user_password">Password</label>
+
+    <div class="controls">
+      <%= f.password_field :password, :autocomplete => "off" %>
+      <span class="help-inline">(leave blank if you don't want to change it)</span>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label" for="user_password_confirmation">Password Confirmation</label>
+
+    <div class="controls">
+      <%= f.password_field :password_confirmation %>
+    </div>
+  </div>
+
+  <div class="hr hidden"></div>
+
+  <div class="control-group">
+    <label class="control-label" for="user_current_password">Current Password</label>
+
+    <div class="controls">
+      <%= f.password_field :current_password %>
+      <span class="help-inline">(we need your current password to confirm your changes)</span>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit "Update", class: "btn btn-info" %>
+
+    &nbsp; &nbsp; &nbsp;
+    <button class="btn" type="reset">
+      <i class="icon-undo bigger-110"></i>
+      Reset
+    </button>
+  </div>
+<% end %>
+
+

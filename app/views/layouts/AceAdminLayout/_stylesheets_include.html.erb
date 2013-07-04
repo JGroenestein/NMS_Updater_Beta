@@ -1,0 +1,30 @@
+<!--basic styles-->
+
+<%= stylesheet_link_tag "bootstrap.min" %>
+<%= stylesheet_link_tag "bootstrap-responsive.min" %>
+<%= stylesheet_link_tag "font-awesome.min" %>
+
+<!--[if IE 7]>
+<%= stylesheet_link_tag "font-awesome-ie7.min" %>
+<![endif]-->
+
+<!--page specific plugin styles-->
+
+<%= yield :page_specific_stylesheets %>
+
+<!--fonts-->
+
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" />
+
+<!--ace styles-->
+<%= stylesheet_link_tag "ace.min" %>
+<%= stylesheet_link_tag "ace-responsive.min" %>
+<%= stylesheet_link_tag "ace-skins.min" %>
+
+<!--[if lte IE 8]>
+<%= stylesheet_link_tag "ace-ie.min" %>
+<![endif]-->
+
+<!--inline styles if any-->
+
+<%= yield :inline_stylesheets %>

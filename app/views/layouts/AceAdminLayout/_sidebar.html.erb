@@ -1,0 +1,68 @@
+<div id="sidebar">
+  <div id="sidebar-shortcuts">
+    <div id="sidebar-shortcuts-large">
+      <button class="btn btn-small btn-success hidden">
+        <i class="icon-signal"></i>
+      </button>
+
+      <button class="btn btn-small btn-info hidden">
+        <i class="icon-pencil"></i>
+      </button>
+
+      <button class="btn btn-small btn-warning hidden">
+        <i class="icon-group"></i>
+      </button>
+
+      <button class="btn btn-small btn-danger hidden">
+        <i class="icon-cogs"></i>
+      </button>
+    </div>
+
+    <div id="sidebar-shortcuts-mini">
+      <span class="btn btn-success hidden"></span>
+
+      <span class="btn btn-info hidden"></span>
+
+      <span class="btn btn-warning hidden"></span>
+
+      <span class="btn btn-danger hidden"></span>
+    </div>
+  </div><!--#sidebar-shortcuts-->
+
+  <ul class="nav nav-list">
+    <li <%= active_page?(index_path) %>>
+      <%= link_to (raw('<i class="icon-dashboard"></i><span>Dashboard</span>')), index_path %>
+    </li>
+
+    <%= content_tag :li, :class => "#{active_menu?(current_page?(add_path) || current_page?(update_path) || current_page?(remove_path))}" do %>
+      <a href="#" class="dropdown-toggle">
+        <i class="icon-edit"></i>
+        <span>NMS</span>
+
+        <b class="arrow icon-angle-down"></b>
+      </a>
+
+      <ul class="submenu">
+        <li <%= active_page?(add_path) %>>
+          <%= link_to (raw('<i class="icon-double-angle-right"></i>Add')), add_path %>
+        </li>
+
+        <li <%= active_page?(update_path) %>>
+          <%= link_to (raw('<i class="icon-double-angle-right"></i>Update')), update_path %>
+        </li>
+
+        <li <%= active_page?(remove_path) %>>
+          <%= link_to (raw('<i class="icon-double-angle-right"></i>Remove')), remove_path %>
+        </li>
+      </ul>
+    <% end %>
+
+    <li <%= active_page?(process_path) %>>
+      <%= link_to (raw('<i class="icon-cogs"></i><span>Process</span>')), process_path %>
+    </li>
+  </ul><!--/.nav-list-->
+
+  <div id="sidebar-collapse">
+    <i class="icon-double-angle-left"></i>
+  </div>
+</div>

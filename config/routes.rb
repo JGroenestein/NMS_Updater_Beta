@@ -1,4 +1,16 @@
 NMSUpdaterBeta::Application.routes.draw do
+  devise_for :users, :path_names => { :sign_up => "create_user" }
+  resource :username
+
+  root :to => 'dashboard#index'
+
+  match 'index' => 'dashboard#index'
+
+  match 'add' => 'NMS#add'
+  match 'update' => 'NMS#update'
+  match 'remove' => 'NMS#remove'
+
+  match 'process' => 'Process#process'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

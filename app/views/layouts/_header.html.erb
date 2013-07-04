@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title><%= yield(:title) %> - NMS Updater Beta</title>
+
+  <meta name="description" content="overview &amp; stats" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <%= render 'layouts/AceAdminLayout/stylesheets_include' %>
+</head>
+
+<body>
+  <%= render 'layouts/AceAdminLayout/navbar' %>
+  <div class="container-fluid" id="main-container">
+    <a id="menu-toggler" href="#">
+      <span></span>
+    </a>
+    <%= render 'layouts/AceAdminLayout/sidebar' %>
+    <div id="main-content" class="clearfix">
+      <%= render 'layouts/AceAdminLayout/breadcrumbs_and_search' %>
+      <div id="page-content" class="clearfix">
+        <%= render 'layouts/AceAdminLayout/page_header' %>
+        <div class="row-fluid">
+          <!--PAGE CONTENT BEGINS HERE-->
