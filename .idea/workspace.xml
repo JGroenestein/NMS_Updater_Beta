@@ -9,7 +9,7 @@
     <file path="/dashboard_controller.rb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1372952586942" ignored="false" />
     <file path="/application.html.erb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1372959318613" ignored="false" />
     <file path="/_navbar.html.erb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1372955556638" ignored="false" />
-    <file path="/_breadcrumbs_and_search.html.erb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1372948714743" ignored="false" />
+    <file path="/_breadcrumbs_and_search.html.erb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1373047283908" ignored="false" />
     <file path="/20130704144452_devise_create_users.rb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1372954269655" ignored="false" />
     <file path="/routes.rb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1373045927023" ignored="false" />
     <file path="/devise.rb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1372954063407" ignored="false" />
@@ -51,10 +51,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_settings_container.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_settings_container.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/AceAdminLayout/_settings_container.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="91" selection-start="894" selection-end="894" vertical-scroll-proportion="0.44425088">
+            <state line="19" column="113" selection-start="996" selection-end="996" vertical-scroll-proportion="-12.423077">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_breadcrumbs_and_search.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/AceAdminLayout/_breadcrumbs_and_search.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="113" selection-start="495" selection-end="495" vertical-scroll-proportion="-9.807693">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="20" selection-start="478" selection-end="478" vertical-scroll-proportion="0.31166667">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20130704144452_devise_create_users.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20130704144452_devise_create_users.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="22" selection-start="135" selection-end="151" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20130704162751_add_username_to_users.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20130704162751_add_username_to_users.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -64,33 +100,6 @@
         <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="23" column="5" selection-start="392" selection-end="392" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="41" selection-start="2182" selection-end="2182" vertical-scroll-proportion="-8.5">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="37" selection-start="331" selection-end="2514" vertical-scroll-proportion="-12.269231">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="add.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/nms/add.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="327" selection-end="327" vertical-scroll-proportion="-8.5">
               <folding />
             </state>
           </provider>
@@ -132,15 +141,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20130704144452_devise_create_users.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20130704144452_devise_create_users.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="22" selection-start="135" selection-end="151" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -151,8 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/process_controller.rb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/ace.min.css" />
         <option value="$PROJECT_DIR$/app/views/layouts/AceAdminLayout/_javascript_include.html.erb" />
         <option value="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/dashboard/index.html.erb" />
@@ -167,6 +165,8 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/AceAdminLayout/_settings_container.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/AceAdminLayout/_breadcrumbs_and_search.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
       </list>
     </option>
   </component>
@@ -830,20 +830,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/ace.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="44" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="12" selection-start="331" selection-end="331" vertical-scroll-proportion="-7.1923075">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/AceAdminLayout/_sidebar.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="46" selection-start="1" selection-end="47" vertical-scroll-proportion="-0.65384614">
@@ -861,20 +847,6 @@
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/ace.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="2068" selection-start="2735" selection-end="2735" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130704162751_add_username_to_users.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130704144452_devise_create_users.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="22" selection-start="135" selection-end="151" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -937,7 +909,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/AceAdminLayout/_settings_container.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="91" selection-start="894" selection-end="894" vertical-scroll-proportion="0.44425088">
+        <state line="19" column="113" selection-start="996" selection-end="996" vertical-scroll-proportion="-12.423077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/AceAdminLayout/_breadcrumbs_and_search.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="113" selection-start="495" selection-end="495" vertical-scroll-proportion="-9.807693">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130704144452_devise_create_users.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="22" selection-start="135" selection-end="151" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130704162751_add_username_to_users.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="20" selection-start="478" selection-end="478" vertical-scroll-proportion="0.31166667">
           <folding />
         </state>
       </provider>
