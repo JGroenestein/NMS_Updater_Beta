@@ -11,7 +11,24 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130704194100) do
+ActiveRecord::Schema.define(:version => 20130705172324) do
+
+  create_table "nms_updates", :force => true do |t|
+    t.string   "service_type"
+    t.string   "basestation"
+    t.string   "direction"
+    t.string   "device_make"
+    t.string   "device_model"
+    t.string   "bigair_service_number"
+    t.string   "partner"
+    t.string   "business_name"
+    t.string   "address"
+    t.string   "device_ip"
+    t.string   "added_by"
+    t.string   "completed_by"
+    t.datetime "created_at",            :null => false
+    t.datetime "updated_at",            :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false

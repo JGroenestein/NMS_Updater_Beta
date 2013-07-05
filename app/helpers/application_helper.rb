@@ -13,13 +13,12 @@ module ApplicationHelper
   end
 
   def skin_method
-    @user = current_user
-    case @user.skin
-      when "#222A2D"
+    case cookies[:SkinCookie]
+      when "skin-1"
         "class=skin-1"
-      when "#C6487E"
+      when "skin-2"
         "class=skin-2"
-      when "#D0D0D0"
+      when "skin-3"
         "class=skin-3"
     end
   end

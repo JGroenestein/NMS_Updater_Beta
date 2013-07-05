@@ -10,4 +10,7 @@ class NmsController < ApplicationController
   def remove
   end
 
+  def create
+  end
+
 end

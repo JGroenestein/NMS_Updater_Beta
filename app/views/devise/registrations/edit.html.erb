@@ -26,17 +26,6 @@
   <% end %>
 
   <div class="control-group">
-    <label class="control-label" for="user_skin">Choose Skin</label>
-    <div class="controls">
-      <%= f.select(:skin, options_for_select([
-                                               ['#438EB9', '#438EB9', :'data-class' => "default"],
-                                               ['#222A2D', '#222A2D', :'data-class' => "skin-1"],
-                                               ['#C6487E', '#C6487E', :'data-class' => "skin-2"],
-                                               ['#D0D0D0', '#D0D0D0', :'data-class' => "skin-3"]], @user.skin), {}, {:id => 'skin-colorpicker'}) %>
-    </div>
-  </div>
-
-  <div class="control-group">
     <label class="control-label" for="user_email">Email</label>
     <div class="controls">
       <%= f.email_field :email, :autofocus => true %>

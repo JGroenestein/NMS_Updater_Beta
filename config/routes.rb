@@ -1,6 +1,5 @@
 NMSUpdaterBeta::Application.routes.draw do
   devise_for :users, :path_names => { :sign_up => "create_user" }
-  resource :username
 
   root :to => 'dashboard#index'
 
