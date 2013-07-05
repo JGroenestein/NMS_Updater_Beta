@@ -1,6 +1,16 @@
 <% provide(:title, 'Edit User') %>
 <% provide(:page_header_description, 'Update User Details') %>
 
+<%= content_for :page_specific_stylesheets do %>
+  <%= stylesheet_link_tag '' %>
+<% end %>
+
+<%= content_for :inline_stylesheets do %>
+  <%# ----------------------None---------------------- %>
+<% end %>
+
+
+<%# Page Contend - Start %>
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put, :class => "form-horizontal" }) do |f| %>
 
   <% unless devise_error_messages! == "" %>
@@ -83,5 +93,11 @@
     </button>
   </div>
 <% end %>
+<%# Page Contend - End %>
 
+<%= content_for :page_specific_javascripts do %>
+  <%= javascript_include_tag '' %>
+<% end %>
 
+<% content_for :inline_javascripts do %>
+<% end %>
