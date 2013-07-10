@@ -8,20 +8,20 @@
     <file path="/index.html.erb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1372952433544" ignored="false" />
     <file path="/dashboard_controller.rb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1372952586942" ignored="false" />
     <file path="/application.html.erb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1372959318613" ignored="false" />
-    <file path="/_navbar.html.erb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1372955556638" ignored="false" />
+    <file path="/_navbar.html.erb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1373476879319" ignored="false" />
     <file path="/_breadcrumbs_and_search.html.erb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1373047283908" ignored="false" />
     <file path="/20130704144452_devise_create_users.rb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1373048705159" ignored="false" />
-    <file path="/routes.rb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1373045927023" ignored="false" />
+    <file path="/routes.rb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1373477749768" ignored="false" />
     <file path="/devise.rb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1372954063407" ignored="false" />
     <file path="/_links.erb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1372953496698" ignored="false" />
     <file path="/edit.html.erb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1372969510365" ignored="false" />
     <file path="/_header.html.erb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1372969258573" ignored="false" />
     <file path="/new.html.erb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1373456868253" ignored="false" />
-    <file path="/user.rb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1372966880706" ignored="false" />
+    <file path="/user.rb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1373476499705" ignored="false" />
     <file path="/devise.en.yml" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1372958239774" ignored="false" />
     <file path="/_sidebar.html.erb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1373458182953" ignored="false" />
-    <file path="/nms_controller.rb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1373045970520" ignored="false" />
-    <file path="/add.html.erb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1373046007312" ignored="false" />
+    <file path="/nms_controller.rb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1373477278304" ignored="false" />
+    <file path="/add.html.erb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1373482580247" ignored="false" />
     <file path="/update.html.erb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1372960310000" ignored="false" />
     <file path="/remove.html.erb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1372960305654" ignored="false" />
     <file path="/process.html.erb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1372960712325" ignored="false" />
@@ -34,6 +34,13 @@
     <file path="/20130705172324_create_nms_updates.rb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1373045328551" ignored="false" />
     <file path="/production.rb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1373052666583" ignored="false" />
     <file path="/ace.min.css" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1373457515535" ignored="false" />
+    <file path="/20130710170703_create_nms_updates.rb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1373476295689" ignored="false" />
+    <file path="/nms_update.rb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1373476533032" ignored="false" />
+    <file path="/profile_page.html.erb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1373485054202" ignored="false" />
+    <file path="/profile_controller.rb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1373477048464" ignored="false" />
+    <file path="/_nms_updates.html.erb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1373477000953" ignored="false" />
+    <file path="/nms_updates_controller.rb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1373479116912" ignored="false" />
+    <file path="/_nms_update.html.erb" changelist="1120994b-7e35-41ff-85fe-f4afb5b5aca4" time="1373481383094" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,65 +60,80 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <file leaf-file-name="profile_page.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/profile/profile_page.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="23" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.0">
+            <state line="110" column="6" selection-start="3609" selection-end="3609" vertical-scroll-proportion="0.9381818">
+              <folding>
+                <element signature="e#692#714#0" expanded="true" />
+                <element signature="e#1998#2038#0" expanded="true" />
+                <element signature="e#3185#3203#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blanktemplate.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/blanktemplate.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb">
+      <file leaf-file-name="jquery.inputlimiter.1.3.1.min.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/jquery.inputlimiter.1.3.1.min.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="0" selection-start="2559" selection-end="2559" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
+      <file leaf-file-name="_header.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="9" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="84" column="48" selection-start="2829" selection-end="2829" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_sidebar.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_sidebar.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/AceAdminLayout/_sidebar.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="55" selection-start="416" selection-end="416" vertical-scroll-proportion="0.018619934">
+            <state line="55" column="123" selection-start="1747" selection-end="1747" vertical-scroll-proportion="-8.076923">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="process_page.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/process/process_page.html.erb">
+      <file leaf-file-name="_stylesheets_include.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/AceAdminLayout/_stylesheets_include.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="20" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="remove.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/nms/remove.html.erb">
+      <file leaf-file-name="_page_header.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/AceAdminLayout/_page_header.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_nms_update.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/nms_updates/_nms_update.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="22" selection-start="603" selection-end="603" vertical-scroll-proportion="-8.5">
+              <folding>
+                <element signature="n#style#0;n#td#10;n#tr#0;n#tbody#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -119,7 +141,16 @@
       <file leaf-file-name="_javascript_include.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/AceAdminLayout/_javascript_include.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="66" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0">
+            <state line="20" column="0" selection-start="543" selection-end="588" vertical-scroll-proportion="-13.076923">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/nms_updates/add.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="28" selection-start="294" selection-end="294" vertical-scroll-proportion="-0.65384614">
               <folding />
             </state>
           </provider>
@@ -135,22 +166,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/layouts/AceAdminLayout/_breadcrumbs_and_search.html.erb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130710170703_create_nms_updates.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20130704144452_devise_create_users.rb" />
-        <option value="$PROJECT_DIR$/app/views/dashboard/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/blanktemplate.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/nms/add.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/nms/update.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/process/process.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" />
-        <option value="$PROJECT_DIR$/config/environments/production.rb" />
-        <option value="$PROJECT_DIR$/app/views/process/process_page.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/nms/remove.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/nms_update.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/views/layouts/AceAdminLayout/_navbar.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/profile/_nms_updates.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/profile_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/process_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/nms_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/AceAdminLayout/_sidebar.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/ace.min.css" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/nms_updates_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/nms_updates/_nms_update.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/nms_updates/add.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/jquery.inputlimiter.1.3.1.min.js" />
+        <option value="$PROJECT_DIR$/app/views/profile/profile_page.html.erb" />
       </list>
     </option>
   </component>
@@ -309,6 +340,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="profile" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NMS_Updater_Beta" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NMS_Updater_Beta" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="process" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -331,7 +384,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="nms" />
+              <option name="myItemId" value="nms_updates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -474,10 +527,6 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dashboard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -562,6 +611,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NMS_Updater_Beta" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NMS_Updater_Beta" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fonts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -815,17 +886,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1916" y="-4" width="1928" height="1088" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26254" sideWeight="0.6704663" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26254" sideWeight="0.6715026" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32929292" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3284974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -897,99 +968,121 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/blanktemplate.html.erb">
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="20" selection-start="408" selection-end="408" vertical-scroll-proportion="-11.769231" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/nms/add.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="371" selection-end="371" vertical-scroll-proportion="-9.807693" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/500.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/422.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/nms/update.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="44" selection-start="443" selection-end="443" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="23" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.0">
+        <state line="2" column="10" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/process/process_page.html.erb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130710170703_create_nms_updates.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="20" selection-start="434" selection-end="434" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/nms/remove.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="384" selection-end="384" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/AceAdminLayout/_javascript_include.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="66" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="0" selection-start="2559" selection-end="2559" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="9" selection-start="430" selection-end="430" vertical-scroll-proportion="0.0">
+        <state line="4" column="0" selection-start="100" selection-end="451" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="48" selection-start="2829" selection-end="2829" vertical-scroll-proportion="0.0">
+        <state line="91" column="20" selection-start="3132" selection-end="3315" vertical-scroll-proportion="-14.384615">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://G:/!Random/AceAdminPanel v1.1/assets/css/uncompressed/ace.css">
+    <entry file="file://$PROJECT_DIR$/app/controllers/nms_updates_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1435" column="34" selection-start="26024" selection-end="26047" vertical-scroll-proportion="2.8662093" />
+        <state line="14" column="42" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/ace.min.css">
+    <entry file="file://$PROJECT_DIR$/app/controllers/profile_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="17400" selection-start="17400" selection-end="17400" vertical-scroll-proportion="0.0" />
+        <state line="2" column="0" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/nms_updates/update.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/nms_updates/_nms_update.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="22" selection-start="603" selection-end="603" vertical-scroll-proportion="-8.5">
+          <folding>
+            <element signature="n#style#0;n#td#10;n#tr#0;n#tbody#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/nms_updates/add.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="28" selection-start="294" selection-end="294" vertical-scroll-proportion="-0.65384614">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/AceAdminLayout/_page_header.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/AceAdminLayout/_sidebar.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="55" selection-start="416" selection-end="416" vertical-scroll-proportion="0.018619934">
+        <state line="55" column="123" selection-start="1747" selection-end="1747" vertical-scroll-proportion="-8.076923">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/AceAdminLayout/_stylesheets_include.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/AceAdminLayout/_javascript_include.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="543" selection-end="588" vertical-scroll-proportion="-13.076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/jquery.inputlimiter.1.3.1.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/blanktemplate.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/profile/profile_page.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="110" column="6" selection-start="3609" selection-end="3609" vertical-scroll-proportion="0.9381818">
+          <folding>
+            <element signature="e#692#714#0" expanded="true" />
+            <element signature="e#1998#2038#0" expanded="true" />
+            <element signature="e#3185#3203#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

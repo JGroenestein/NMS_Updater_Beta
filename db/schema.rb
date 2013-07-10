@@ -11,7 +11,26 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130704162751) do
+ActiveRecord::Schema.define(:version => 20130710170703) do
+
+  create_table "nms_updates", :force => true do |t|
+    t.string   "service_type"
+    t.string   "basestation"
+    t.string   "direction"
+    t.string   "device_make"
+    t.string   "device_model"
+    t.string   "ba_service_number"
+    t.string   "partner"
+    t.string   "business_name"
+    t.string   "address"
+    t.string   "ip_address"
+    t.string   "comments"
+    t.integer  "user_id"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+  end
+
+  add_index "nms_updates", ["user_id", "created_at"], :name => "index_nms_updates_on_user_id_and_created_at"
 
   create_table "users", :force => true do |t|
     t.string   "email",               :default => "", :null => false

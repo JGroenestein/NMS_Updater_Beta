@@ -1,0 +1,107 @@
+<% provide(:title, 'Add') %>
+<% provide(:page_header_description, 'Add new device to NMS') %>
+
+<%= content_for :page_specific_stylesheets do %>
+<% end %>
+
+<%= content_for :inline_stylesheets do %>
+  <%# ----------------------None---------------------- %>
+<% end %>
+
+
+<%# Page Contend - Start %>
+
+<div class="row-fluid">
+
+  <ul class="nav nav-pills">
+
+    <li class="active">
+      <a href="#">Big Air</a>
+    </li>
+
+    <li class="disabled">
+      <a href="#">Allegro</a>
+    </li>
+  </ul>
+
+  <ul class="nav nav-pills">
+    <li class="active">
+      <a href="#">Infrastructure</a>
+    </li>
+
+    <li>
+      <a href="#">Customer</a>
+    </li>
+  </ul>
+
+  <ul class="nav nav-pills">
+    <li class="active">
+      <a href="#">Sector Radio</a>
+    </li>
+
+    <li>
+      <a href="#">Backhaul Radio</a>
+    </li>
+
+    <li>
+      <a href="#">Basestation Switch or Router</a>
+    </li>
+
+    <li>
+      <a href="#">Powerrail</a>
+    </li>
+
+    <li>
+      <a href="#">UPS</a>
+    </li>
+
+    <li>
+      <a href="#">ATS</a>
+    </li>
+  </ul>
+
+  <ul class="nav nav-pills">
+    <li class="active">
+      <a href="#">Point to Point</a>
+    </li>
+
+    <li>
+      <a href="#">Point to Multipoint</a>
+    </li>
+  </ul>
+
+<%= form_for(@nms_update, :html => { :class => "form-inline"}) do |f| %>
+
+  <%= f.text_field :service_type, placeholder: "service type", :class => "input-small" %>
+  <br />
+  <br />
+  <%= f.text_field :basestation, placeholder: "Base Station", :class => "input-small" %>
+  <%= f.text_field :direction, placeholder: "Direction", :class => "input-small" %>
+  <%= f.text_field :device_make, placeholder: "Device Make", :class => "input-small" %>
+  <%= f.text_field :device_model, placeholder: "Device Model", :class => "input-small" %>
+  <%= f.text_field :ba_service_number, placeholder: "BA Number", :class => "input-small" %>
+  <%= f.text_field :partner, placeholder: "Partner", :class => "input-medium" %>
+  <%= f.text_field :business_name, placeholder: "Business Name", :class => "input-medium" %>
+  <%= f.text_field :address, placeholder: "Address", :class => "input-large" %>
+  <%= f.text_field :ip_address, placeholder: "IP Address", :class => "input-small" %>
+  <%= button_tag(type: 'submit', class: "btn btn-info btn-small") do %>
+    <i class="icon-key bigger-110"></i>
+    Submit
+   <% end %>
+
+  <br />
+  <br />
+  <%= f.text_area :comments, placeholder: "Comments", :class => "autosize-transition span3",
+            :style => "overflow: hidden; word-wrap: break-word; resize: horizontal; height: 100px;" %>
+
+<% end %>
+</div>
+
+<%# Page Contend - End %>
+
+<%= content_for :page_specific_javascripts do %>
+<% end %>
+
+<% content_for :inline_javascripts do %>
+<% end %>
+

@@ -39,7 +39,7 @@
       <%= link_to (raw('<i class="icon-dashboard"></i><span>Dashboard</span>')), index_path %>
     </li>
 
-    <%= content_tag :li, :class => "#{active_menu?(current_page?(add_path) || current_page?(update_path) || current_page?(remove_path))}" do %>
+    <%= content_tag :li, :class => "#{active_menu?(current_page?(nms_add_path) || current_page?(nms_update_path) || current_page?(nms_remove_path))}" do %>
       <a href="#" class="dropdown-toggle">
         <i class="icon-edit"></i>
         <span>NMS</span>
@@ -48,16 +48,16 @@
       </a>
 
       <ul class="submenu">
-        <li <%= active_page?(add_path) %>>
-          <%= link_to (raw('<i class="icon-double-angle-right"></i>Add')), add_path %>
+        <li <%= active_page?(nms_add_path) %>>
+          <%= link_to (raw('<i class="icon-double-angle-right"></i>Add')), nms_add_path %>
         </li>
 
-        <li <%= active_page?(update_path) %>>
-          <%= link_to (raw('<i class="icon-double-angle-right"></i>Update')), update_path %>
+        <li <%= active_page?(nms_update_path) %>>
+          <%= link_to (raw('<i class="icon-double-angle-right"></i>Update')), nms_update_path %>
         </li>
 
-        <li <%= active_page?(remove_path) %>>
-          <%= link_to (raw('<i class="icon-double-angle-right"></i>Remove')), remove_path %>
+        <li <%= active_page?(nms_remove_path) %>>
+          <%= link_to (raw('<i class="icon-double-angle-right"></i>Remove')), nms_remove_path %>
         </li>
       </ul>
     <% end %>

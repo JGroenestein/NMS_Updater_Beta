@@ -1,0 +1,2 @@
+module NmsUpdatesHelper
+end
