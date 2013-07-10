@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Login Page - Ace Admin</title>
+  <title>Login Page - NMS Updater Beta</title>
 
   <meta name="description" content="User login page" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -85,7 +85,7 @@
                   <div class="row-fluid">
                     <label class="span8">
                       <% if devise_mapping.rememberable? -%>
-                        <%= f.check_box :remember_me %><span class="lbl"> Remember Me</span>
+                        <%= f.check_box :remember_me, :checked => "checked" %><span class="lbl"> Remember Me</span>
                       <% end -%>
                     </label>
 
