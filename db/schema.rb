@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(:version => 20130710170703) do
     t.string   "ip_address"
     t.string   "comments"
     t.integer  "user_id"
+    t.integer  "completed_by"
     t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false
   end

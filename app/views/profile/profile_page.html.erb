@@ -1,5 +1,9 @@
 <% provide(:title, 'User Profile') %>
-<% provide(:page_header_description, 'Profile for #user') %>
+<%# provide(:page_header_description, 'Profile for #user') %>
+
+<%= content_for :page_header_description do %>
+  Profile for <%= current_user.username %>
+<% end %>
 
 <%= content_for :page_specific_stylesheets do %>
 <% end %>
@@ -10,112 +14,104 @@
 
 
 <%# Page Contend - Start %>
+<% if @user.nms_updates.any? %>
+<div class="row-fluid">
+<div class="span12">
+ <h3> NMS Updates (<%= @user.nms_updates.count %>) </h3>
+<table id="table_bug_report" class="table table-striped table-bordered table-hover" style="table-layout: fixed; width: 100%">
 
-<div>
-  <% if @user.nms_updates.any? %>
-    <div class="widget-box">
-      <div class="widget-header header-color-blue">
-        <h5 class="bigger lighter">
-          <i class="icon-table"></i>
-          NMS Updates (<%= @user.nms_updates.count %>)
-        </h5>
+  <thead>
+  <tr>
+    <th class="center" style="width: 25px">
+      <label>
+        <input type="checkbox">
+        <span class="lbl"></span>
+      </label>
+    </th>
+    <th>
+      Service Type
+    </th>
 
-        <div class="widget-toolbar widget-toolbar-light no-border">
-          <select id="simple-colorpicker-1" class="hidden" style="display: none;">
-            <option selected="" data-class="blue" value="#307ECC">#307ECC</option>
-            <option data-class="blue2" value="#5090C1">#5090C1</option>
-            <option data-class="blue3" value="#6379AA">#6379AA</option>
-            <option data-class="green" value="#82AF6F">#82AF6F</option>
-            <option data-class="green2" value="#2E8965">#2E8965</option>
-            <option data-class="green3" value="#5FBC47">#5FBC47</option>
-            <option data-class="red" value="#E2755F">#E2755F</option>
-            <option data-class="red2" value="#E04141">#E04141</option>
-            <option data-class="red3" value="#D15B47">#D15B47</option>
-            <option data-class="orange" value="#FFC657">#FFC657</option>
-            <option data-class="purple" value="#7E6EB0">#7E6EB0</option>
-            <option data-class="pink" value="#CE6F9E">#CE6F9E</option>
-            <option data-class="dark" value="#404040">#404040</option>
-            <option data-class="grey" value="#848484">#848484</option>
-            <option data-class="default" value="#EEE">#EEE</option>
-          </select>
-        </div>
-      </div>
+    <th>
+      Base station
+    </th>
+    <th>
+      Direction
+    </th>
+    <th>
+      Device Make
+    </th>
+    <th>
+      Device Model
+    </th>
+    <th>
+      BA Number
+    </th>
+    <th>
+      Partner
+    </th>
+    <th>
+      Business Name
+    </th>
+    <th>
+      Address
+    </th>
+    <th>
+      IP Address
+    </th>
+    <th style="width: 15%">
+      Comments
+    </th>
+    <th>
+      Created
+    </th>
+  </tr>
+  </thead>
 
-      <div class="widget-body">
-        <div class="widget-main no-padding">
-          <table class="table table-striped table-bordered table-hover" style="table-layout: fixed; width: 100%">
-            <thead>
-            <tr>
-              <th>
-                <i class="icon-user"></i>
-                Service Type
-              </th>
+<tbody>
 
-              <th>
-                <i class="icon-bullseye"></i>
-                Base station
-              </th>
-              <th>
-                <i class="icon-location-arrow"></i>
-                Direction
-              </th>
-              <th>
-                <i class="icon-"></i>
-                Device Make
-              </th>
-              <th>
-                <i class="icon-"></i>
-                Device Model
-              </th>
-              <th>
-                <i class="icon-asterisk"></i>
-                BA Number
-              </th>
-              <th>
-                <i class="icon-"></i>
-                Partner
-              </th>
-              <th>
-                <i class="icon-"></i>
-                Business Name
-              </th>
-              <th>
-                <i class="icon-building"></i>
-                Address
-              </th>
-              <th>
-                <i class="icon-cloud"></i>
-                IP Address
-              </th>
-              <th style="width: 15%">
-                <i class="icon-comments"></i>
-                Comments
-              </th>
-              <th>
-                <i class="icon-calendar"></i>
-                Created
-              </th>
-            </tr>
-            </thead>
+<tr class="">
 
-            <%= render @nms_updates %>
-            <%= will_paginate @nms_updates %>
-          </table>
+  <%= render @nms_updates %>
+
+</tr>
 
 
-        </div>
-      </div>
-    </div>
-
-  <% end %>
+</tbody>
+</table>
+</div><!--/span-->
 </div>
+<% end %>
 
 <%# Page Contend - End %>
 
 <%= content_for :page_specific_javascripts do %>
-
+  <%= javascript_include_tag "jquery.dataTables.min" %>
+  <%= javascript_include_tag "jquery.dataTables.bootstrap" %>
 <% end %>
 
 <% content_for :inline_javascripts do %>
+  <script type="text/javascript">
+    $(function() {
+      var oTable1 = $('#table_report').dataTable( {
+        "aoColumns": [
+          { "bSortable": false },
+          null, null,null, null, null,
+          { "bSortable": false }
+        ] } );
 
+
+      $('table th input:checkbox').on('click' , function(){
+        var that = this;
+        $(this).closest('table').find('tr > td:first-child input:checkbox')
+          .each(function(){
+            this.checked = that.checked;
+            $(this).closest('tr').toggleClass('selected');
+          });
+
+      });
+
+      $('[data-rel=tooltip]').tooltip();
+    })
+  </script>
 <% end %>

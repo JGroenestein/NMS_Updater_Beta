@@ -17,6 +17,7 @@ class NmsUpdatesController < ApplicationController
       flash[:success] = "NMS Update created!"
       redirect_to nms_add_path
     else
+      flash[:alert] = "NMS Update created!"
       render 'nms/add'
     end
   end

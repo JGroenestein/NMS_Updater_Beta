@@ -14,6 +14,7 @@ class CreateNmsUpdates < ActiveRecord::Migration
       t.string   :ip_address
       t.string   :comments
       t.integer  :user_id
+      t.integer  :completed_by
 
       t.timestamps
     end
